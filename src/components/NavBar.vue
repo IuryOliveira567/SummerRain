@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-bar d-flex justify-content-evenly align-items-center p-1">
+  <div class="nav-bar d-flex justify-content-between align-items-center p-1">
     <div class="mobile-menu" @click="showMenu">
       <div></div>
       <div></div>
@@ -18,7 +18,7 @@
         <li class="nav-item"><a class="nav-link" href="#">SUPPORT</a></li>
       </ul>
     </nav>
-    <div class="d-flex col-7 col-sm-10 justify-content-end">
+    <div class="d-flex justify-content-end">
       <a class="login p-2 rounded text-white nav-link m-1" href="#">LOG IN</a>
       <a class="signin p-2 rounded nav-link m-1" href="#">SIGN UP</a>
     </div>
@@ -108,4 +108,4 @@
     }
     
   }
-</style>
+</style>      

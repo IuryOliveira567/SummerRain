@@ -1,9 +1,9 @@
 <template>
   <div class="nav-bar d-flex justify-content-between align-items-center p-1">
     <div class="mobile-menu" @click="showMenu">
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
     </div>
     <div class="img-logo">
       <a href="#"><img class="logo rounded rounded-2" src="../assets/images/logo.png" alt="mouse flow logo"/></a>
@@ -32,6 +32,15 @@
       showMenu: function() {
         const mobileMenu = document.getElementsByClassName("nav")[0];
         mobileMenu.classList.toggle("active");
+
+        const line1 = document.getElementsByClassName("line1")[0];
+        line1.classList.toggle("hide");
+
+        const line2 = document.getElementsByClassName("line2")[0];
+        line2.classList.toggle("rotate-left");
+
+        const line3 = document.getElementsByClassName("line3")[0];
+        line3.classList.toggle("rotate-right");
       }
     }
   }
@@ -103,6 +112,19 @@
       display: block;
     }
 
+    .hide {
+      display: none;
+    }
+    .rotate-left {
+      transform: rotateZ(32deg) translateX(3px) translateY(5px);
+    }
+    .rotate-right {
+      transform: rotateZ(-32deg) translateX(3px) translateY(-5px);
+    }
+
+    .rotate-left, .rotate-right {
+      transition-duration: 0.3s;
+    }
     .nav-bar {
       justify-content: space-between !important;
     }

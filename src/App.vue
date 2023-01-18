@@ -7,15 +7,15 @@
     </div>
     <div class="row main">
       <main class="mt-5">
-        <div class="row main-pane">
-          <div class="col-5 left-pane">
-            <h1>Get the Best<br>
+        <div class="main-pane d-flex justify-content-around">
+          <div class="left-pane">
+            <h1 class="fs-1">Get the Best<br>
             Products</h1>
             <h3 class="fs-4">From our Store</h3>
             <a class="getStartedBtn fs-5" href="#">Get Started<i class="fa fa-angle-right fa-align-right"></i></a>
           </div>
-          <div class="col-6 right-pane d-flex align-items-start pt-4">
-            <img class="img-fluid rounded rounded-5 cursor-pointer" src="../src/assets/images/right-pane-image2.jpg" width="100%" height="100%" alt="Left Pane Image" />
+          <div class="right-pane d-flex align-items-start pt-4">
+            <img class="img-pane rounded rounded-5 cursor-pointer" src="../src/assets/images/right-pane-image2.jpg" width="100%" height="100%" alt="Left Pane Image" />
           </div>
         </div>
       </main>
@@ -46,7 +46,7 @@
         :benefit="benefit.description"
       />
     </div>
-    <div class="row footer-pane">
+    <div class="row">
       <FooterPane/>
     </div>
   </div>
@@ -173,13 +173,76 @@ main {
 }
 
 .footer-pane {
-  height: 40vh;
+  height: 60vh;
 }
 
 @media(max-width: 1125px) {
   body {
     font-size: 0.8rem;
   }
+
+  .img-pane {
+    height: 80%;
+  }
+
+  .left-pane * {
+    margin-top: 5%;
+    padding-left: 5%;
+  }
 }
 
+@media(max-width: 992px) {
+   .products {
+     height: 120vh;
+     border: 1px solid red;
+   }
+
+   .main-pane {
+     height: 50vh;
+     border: 1px solid red;
+   }
+
+   section {
+    margin-top: 0;
+   }
+
+   .img-pane {
+     height: 60%;
+     width: 50vw;
+   }
+}
+
+@media(max-width: 768px) {
+  .main-pane {
+    display: flex;
+  }
+
+  .left-pane, .right-pane {
+    width: 100vw;
+    text-align: center;
+  }
+
+  .left-pane {
+    padding-top: 2%;
+    height: 25vh;
+  }
+
+  .img-pane {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 70%;
+  }
+}
+
+@media(max-width: 682px) {
+  .getStartedBtn {
+    padding: 8px 8px;
+  }
+
+  .left-pane {
+    padding-left: 2%;
+    padding-top: 12%;
+  }
+}
 </style>

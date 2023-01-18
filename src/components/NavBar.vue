@@ -19,8 +19,8 @@
       </ul>
     </nav>
     <div class="d-flex justify-content-end">
-      <a class="login p-2 rounded text-white nav-link m-1" href="#">LOG IN</a>
-      <a class="signin p-2 rounded nav-link m-1" href="#">SIGN UP</a>
+      <a class="login rounded text-white nav-link m-1" href="#">LOG IN</a>
+      <a class="signin rounded nav-link m-1" href="#">SIGN UP</a>
     </div>
   </div>
 </template>
@@ -56,7 +56,8 @@
   }
 
   .login, .signin {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    padding: 8px 10px;
   }
 
   .login {

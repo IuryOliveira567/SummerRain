@@ -56,4 +56,16 @@
     width: 80%;
   }
 
+  @media(max-width: 858px) {
+    .card {
+      width: 30%;
+      height: 20%;
+    }
+  }
+
+  @media(max-width: 769px) {
+    .card {
+     width: 40%;
+    }
+  }
 </style>

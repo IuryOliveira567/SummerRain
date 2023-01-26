@@ -36,8 +36,8 @@
         </div>
       </section>
     </div>
-    <div class="row benefit-section">
-      <h1 class="fs-2 mt-4 mb-0">Optimizing your Business</h1>
+    <div class="row benefit-section p-1 d-flex flex-row justify-content-around">
+      <h1 class="fs-2 mt-4">Optimizing your Business</h1>
       <BenefitCard
         v-for="(benefit, index) in benefitList" 
         :key="index"
@@ -101,14 +101,6 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 
 header {
   font-weight: 600;
@@ -159,13 +151,13 @@ main {
 }
 
 .benefit-section {
-  height: 35vh;
+  height: auto;
   background-color: #EBEBEB;
   color:#3B3E6D;
 }
 
 .products {
-  height: 200vh;
+  height: 200%;
 }
 
 .products h1 {
@@ -193,13 +185,12 @@ main {
 
 @media(max-width: 992px) {
    .products {
-     height: 120vh;
-     border: 1px solid red;
+     height: 175vh;
    }
 
    .main-pane {
      height: 50vh;
-     border: 1px solid red;
+     border: 2px solid red;
    }
 
    section {
@@ -207,12 +198,22 @@ main {
    }
 
    .img-pane {
-     height: 60%;
+     height: 100%;
      width: 50vw;
+   }
+
+   .left-pane {
+     border: 2px solid blue;
    }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 769px) {
+  .products {
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
   .main-pane {
     display: flex;
   }
@@ -245,4 +246,11 @@ main {
     padding-top: 12%;
   }
 }
+
+@media(max-width: 520px) {
+  .benefit-section {
+    height: 60vh;
+  }
+}
+
 </style>

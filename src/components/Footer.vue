@@ -17,7 +17,6 @@
           <li><a href="#">Twitter</a></li>
           <li><a href="#">Instagram</a></li>
           <li><a href="#">Linkedin</a></li>
-          <li><a href="#"></a></li>
         </ul>
       </div>
       <div>
@@ -27,12 +26,11 @@
           <li><a href="#">Delivery Options</a></li>
           <li><a href="#">Terms & Conditions</a></li>
           <li><a href="#">Privacy Notice</a></li>
-          <li><a href="#"></a></li>
         </ul>
       </div>
       <div>
         <h3>Company</h3>
-        <ul>
+        <ul>  
           <li><a href="#">About</a></li>
           <li><a href="#">Contacts</a></li>
           <li><a href="#">Support</a></li>
@@ -63,6 +61,7 @@
     color: white;
     margin-bottom: 2rem;
   }
+
   .footer div {
     width: 20%;
     display: flex;
@@ -71,6 +70,8 @@
     height: 80%;
     padding-left: 2%;
   }
+
+
   .footer div ul {
     list-style: none;
     padding: 0; 
@@ -89,12 +90,13 @@
   @media(max-width: 730px) {
     .footer {
       flex-direction: column;
-      height: 200vh;
+      height: auto;
+      padding-top: 5%;
     }
 
     .footer div {
-      align-items: center;  
-      width: 100vw;
+      width: 50vw;
+      margin-left: 20%;
     }
 
     div h3 {

@@ -95,7 +95,7 @@
       left: 0;
       background-color: #3B3E6D;
       flex-direction: column;
-      height: 80vh;
+      height: 90vh;
       width: 100vw;
       align-items: center;
       justify-content: space-around;

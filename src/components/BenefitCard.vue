@@ -41,9 +41,11 @@
     }
   }
 
-  @media(max-width: 520px) {
+  @media(max-width: 561px) {
     .benefitcard {
-     
+      width: 100%;
+      border-top: 1px solid lightgray;
     }
   }
+
 </style>

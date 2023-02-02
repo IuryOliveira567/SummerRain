@@ -11,11 +11,11 @@
           <div class="left-pane">
             <h1 class="fs-1">Get the Best<br>
             Products</h1>
-            <h3 class="fs-4">From our Store</h3>
+            <h3 class="fs-4">From our Store</h3><br>
             <a class="getStartedBtn fs-5" href="#">Get Started<i class="fa fa-angle-right fa-align-right"></i></a>
           </div>
           <div class="right-pane d-flex align-items-start pt-4">
-            <img class="img-pane rounded rounded-5 cursor-pointer" src="../src/assets/images/right-pane-image2.jpg" width="100%" height="100%" alt="Left Pane Image" />
+            <img class="img-pane rounded rounded-5 cursor-pointer" src="../src/assets/images/right-pane-image2.jpg" width="90%" height="80%" alt="Left Pane Image" />
           </div>
         </div>
       </main>
@@ -31,13 +31,13 @@
           :price="item.price"
           :stars="item.stars"
         >
-        <img class="img-fluid rounded rounded-4" :src="item.cardImage" width="80%" height="60%" :alt="item.description"/>
+        <img class="img-fluid rounded rounded-4" :src="item.cardImage" width="80%" height="40%" :alt="item.description"/>
         </ProductCard>
         </div>
       </section>
     </div>
     <div class="row benefit-section p-1 d-flex flex-row justify-content-around">
-      <h1 class="fs-2 mt-4">Optimizing your Business</h1>
+      <h1 class="fs-2 mt-4 mb-4">Optimizing your Business</h1>
       <BenefitCard
         v-for="(benefit, index) in benefitList" 
         :key="index"
@@ -107,7 +107,7 @@ header {
 }
 
 main {
-  height: 70vh;
+  height: auto;
 }
 
 .main-pane {
@@ -158,10 +158,12 @@ main {
 
 .products {
   height: 200%;
+  margin-bottom: 3%;
 }
 
 .products h1 {
   color:#3B3E6D;
+  margin-left: 5px;
 }
 
 .footer-pane {
@@ -177,6 +179,11 @@ main {
     height: 80%;
   }
 
+  .left-pane {
+    padding-left: 5%;
+    width: 40vw;
+  }
+
   .left-pane * {
     margin-top: 5%;
     padding-left: 5%;
@@ -186,11 +193,11 @@ main {
 @media(max-width: 992px) {
    .products {
      height: 175vh;
+     margin-top: 5%;
    }
 
    .main-pane {
      height: 50vh;
-     border: 2px solid red;
    }
 
    section {
@@ -201,16 +208,22 @@ main {
      height: 100%;
      width: 50vw;
    }
+}
 
-   .left-pane {
-     border: 2px solid blue;
-   }
+@media(max-width: 700px) {
+  .left-pane {
+    width: 40vw !important;
+    padding-left: 0 !important;
+  }
+
+  .right-pane {
+    width: 60vw !important;
+  }
 }
 
 @media(max-width: 769px) {
   .products {
     height: auto;
-    margin: 0;
     padding: 0;
   }
 
@@ -221,11 +234,6 @@ main {
   .left-pane, .right-pane {
     width: 100vw;
     text-align: center;
-  }
-
-  .left-pane {
-    padding-top: 2%;
-    height: 25vh;
   }
 
   .img-pane {
@@ -243,13 +251,27 @@ main {
 
   .left-pane {
     padding-left: 2%;
-    padding-top: 12%;
+    padding-top: 7%;
+  }
+}
+
+@media(max-width: 578px) {
+  .left-pane {
+    width: 100vw !important;
+  }
+
+  .getStartedBtn i {
+    display: none;
+  }
+
+  .right-pane {
+    display: none !important;
   }
 }
 
 @media(max-width: 520px) {
   .benefit-section {
-    height: 60vh;
+    height: auto;
   }
 }
 

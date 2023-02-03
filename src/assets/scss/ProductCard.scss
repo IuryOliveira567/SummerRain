@@ -1,3 +1,5 @@
+@import "./colors.scss";
+
 .card {
   width: 27%;
   display: flex;
@@ -6,11 +8,11 @@
   padding: 5px;
   margin: 10px;
   cursor: pointer;
-  box-shadow: 1px 1px 3px black;
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16);
 }
 
 .card:hover {
-  transform: scale(1.01);
+  transform: scale(1.005);
 }
 
 .card * {
@@ -21,6 +23,10 @@
   font-size: 1.2rem;
 }
 
+.name, .price {
+  color: $primary_4;
+}
+
 .buy-button {
   border-radius: 10px;
   padding: 6px;
@@ -28,8 +34,8 @@
 }
 
 .buy-button {
-  color: white;
-  background-color: #3A3E6D;
+  color: $light_1;
+  background-color: $primary_1;
   width: 80%;
 }
 

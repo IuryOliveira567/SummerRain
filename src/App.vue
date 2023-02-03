@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row mb-5">
-      <header class="col-12 fixed-top bg-light">
+      <header class="col-12 fixed-top">
         <NavBar/>
       </header>
     </div>
@@ -100,6 +100,10 @@ export default {
 }
 </script>
 
+<style lang="scss">
+  @import './assets/scss/globals.scss';
+</style>
+
 <style lang="scss" scoped>
-  @import './assets/scss/App.scss';
+  @import './assets/scss/App';
 </style>

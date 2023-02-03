@@ -1,9 +1,13 @@
-.nav li a {
-  color: #3B3E6D;
-}
-.nav li a:hover {
-  opacity: 0.7;
-  color: #3B3E6D;
+@import "./colors.scss";
+@import "./mixins.scss";
+
+.nav {
+  li a {
+    color: $primary_1;
+  }
+  li a:hover {
+    color: $secondary_4;
+  }  
 }
 
 .login, .signin {
@@ -11,25 +15,29 @@
   padding: 8px 10px;
 }
 
+.login:active, .signin:active {
+  @include activeButtons;
+}
+
 .login {
-  background-color: #3B3E6D;
-  color: white;
+  background-color: $primary_1;
+  color: $light_1;
 }
 
 .signin {
-  color: #3B3E6D;
-  background-color: white;
-  border: 1px solid #3B3E6D;
+  color: $primary_1;
+  background-color: $light_1;
+  border: 1px solid $primary_1;
 }
 
 .mobile-menu {
   display: none;
-  border: 1px solid #3B3E6D;
+  border: 1px solid $primary_1;
   border-radius: 3px;
   cursor: pointer;
 }
 .mobile-menu div {
-  background-color: #3B3E6D;
+  background-color: $primary_1;
   margin: 8px;
   width: 32px;
   height: 4px;

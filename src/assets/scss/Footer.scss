@@ -1,5 +1,7 @@
+@import "./colors.scss";
+
 .footer {
-  background-color: #3B3E6D;
+  background-color: $primary_1;
   height: 55vh;
   display: flex;
   flex-direction: row;
@@ -8,7 +10,7 @@
 }
 
 h3 {
-  color: white;
+  color: $light_1;
   margin-bottom: 2rem;
 }
 
@@ -27,14 +29,14 @@ h3 {
   padding: 0; 
 }
 .footer div ul li a {
-  color: white;
+  color: $light_1;
   text-decoration: none;
   display: flex;
   padding-bottom: 1.2rem;
   justify-content: start;
 }
 .footer div ul li a:hover {
-  opacity: 0.7;
+  color: $light_3;
 }
 
 @import "./resp/FooterResp.scss";

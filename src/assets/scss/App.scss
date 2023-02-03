@@ -1,5 +1,11 @@
+
+@import "./resp/AppResp.scss";
+@import "./colors.scss";
+@import "./globals.scss";
+
 header {
-  font-weight: 600;
+  background-color: $light_1;
+  box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.16);
 }
 
 main {
@@ -20,7 +26,7 @@ main {
 }
 
 .left-pane h1, h3 {
-  color: #3B3E6D;
+  color: $primary_1;
 }
 
 .left-pane h1 {
@@ -29,27 +35,28 @@ main {
 
 .right-pane img {
   cursor: pointer;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.16);
 }
 
 .getStartedBtn {
-  background-color: #3B3E6D;
-  color: white;
+  background-color: $primary_1;
+  color: $light_1;
   text-decoration: none;
   padding: 8px 20px;
   border-radius: 5px;
 }
 
 .getStartedBtn:hover {
-  color:#3B3E6D;
-  background-color: white;
-  border: 1px solid #3B3E6D;
+  color:$primary_1;
+  background-color: $light_1;
+  border: 1px solid $primary_1;
   transition-duration: 0.3s;
 }
 
 .benefit-section {
   height: auto;
-  background-color: #EBEBEB;
-  color:#3B3E6D;
+  background-color: $light_2;
+  color:$primary_1;
 }
 
 .products {
@@ -58,12 +65,10 @@ main {
 }
 
 .products h1 {
-  color:#3B3E6D;
+  color:$primary_1;
   margin-left: 5px;
 }
 
 .footer-pane {
   height: 60vh;
 }
-
-@import "./resp/AppResp.scss";

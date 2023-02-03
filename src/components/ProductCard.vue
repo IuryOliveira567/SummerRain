@@ -2,7 +2,7 @@
   <div class="card rounded rounded-5">
     <slot></slot>
     <strong><span class="name">{{ name }}</span></strong>
-    <span><strong>${{ price }}</strong></span>
+    <span><strong class="price">${{ price }}</strong></span>
     <StarRating :stars="stars"/><br>
     <button class="buy-button">Buy now</button><br>
   </div>

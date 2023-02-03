@@ -1,0 +1,69 @@
+header {
+  font-weight: 600;
+}
+
+main {
+  height: auto;
+}
+
+.main-pane {
+  height: 100%;
+}
+
+.left-pane {
+  padding-left: 10%;
+  padding-top: 7%;
+}
+
+.left-pane  * {
+   margin: 1rem;
+}
+
+.left-pane h1, h3 {
+  color: #3B3E6D;
+}
+
+.left-pane h1 {
+  font-size: 3.2rem;
+}
+
+.right-pane img {
+  cursor: pointer;
+}
+
+.getStartedBtn {
+  background-color: #3B3E6D;
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.getStartedBtn:hover {
+  color:#3B3E6D;
+  background-color: white;
+  border: 1px solid #3B3E6D;
+  transition-duration: 0.3s;
+}
+
+.benefit-section {
+  height: auto;
+  background-color: #EBEBEB;
+  color:#3B3E6D;
+}
+
+.products {
+  height: 200%;
+  margin-bottom: 3%;
+}
+
+.products h1 {
+  color:#3B3E6D;
+  margin-left: 5px;
+}
+
+.footer-pane {
+  height: 60vh;
+}
+
+@import "./resp/AppResp.scss";

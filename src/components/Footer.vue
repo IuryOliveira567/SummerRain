@@ -47,64 +47,6 @@
   }
 </script>
 
-<style scoped>
-  .footer {
-    background-color: #3B3E6D;
-    height: 55vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  h3 {
-    color: white;
-    margin-bottom: 2rem;
-  }
-
-  .footer div {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 80%;
-    padding-left: 2%;
-  }
-
-
-  .footer div ul {
-    list-style: none;
-    padding: 0; 
-  }
-  .footer div ul li a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    padding-bottom: 1.2rem;
-    justify-content: start;
-  }
-  .footer div ul li a:hover {
-    opacity: 0.7;
-  }
-
-  @media(max-width: 730px) {
-    .footer {
-      flex-direction: column;
-      height: auto;
-      padding-top: 5%;
-    }
-
-    .footer div {
-      width: 50vw;
-      margin-left: 20%;
-    }
-
-    div h3 {
-      font-size: 2.3rem;
-    }
-
-    div ul li a {
-      font-size: 1.1rem;
-    }
-  }
+<style lang="scss" scoped>
+  @import "../assets/scss/Footer.scss";
 </style>

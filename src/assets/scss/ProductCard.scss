@@ -1,0 +1,36 @@
+.card {
+  width: 27%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px black;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card * {
+  margin: 2px;
+}
+
+.name {
+  font-size: 1.2rem;
+}
+
+.buy-button {
+  border-radius: 10px;
+  padding: 6px;
+  border: none;
+}
+
+.buy-button {
+  color: white;
+  background-color: #3A3E6D;
+  width: 80%;
+}
+
+@import "./resp/ProductCardResp.scss";

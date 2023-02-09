@@ -4,17 +4,24 @@
     }
     .links {
       position: absolute;
-      top: calc(8vh + 2px);
+      top: calc(7vh + 4px);
       left: 0;
       background-color: #3B3E6D;
       flex-direction: column;
-      height: 100vh;
+      height: 90vh;
       width: 100vw;
       align-items: center;
       justify-content: space-around;
       z-index:  999;
     }
   
+    @-moz-document url-prefix() {
+      .links {
+        top: calc(6vh);
+        height: 60vh;
+      }
+    }
+    
     .links li a {
       color: white;
     }
@@ -43,4 +50,10 @@
     .nav-bar {
       justify-content: space-between !important;
     } 
+}
+
+@media(max-width: 600px) {
+  .links {
+    width: 104vw;
+  }
 }

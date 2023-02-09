@@ -37,7 +37,7 @@
       </section>
     </div>
     <div class="row benefit-section d-flex flex-row justify-content-around">
-      <h1 class="fs-2 mt-4 mb-4">Optimizing your Business</h1>
+      <h1 class="fs-2 mt-4 mb-5">Optimizing your Business</h1>
       <BenefitCard
         v-for="(benefit, index) in benefitList" 
         :key="index"

@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="row mb-5">
-      <header class="col-12 fixed-top">
+      <header class="col-12">
         <NavBar/>
       </header>
-    </div>
+   </div>
     <div class="row main">
       <main class="mt-5">
         <div class="main-pane d-flex justify-content-around">
@@ -15,7 +15,7 @@
             <a class="getStartedBtn fs-5" href="#">Get Started<i class="fa fa-angle-right fa-align-right"></i></a>
           </div>
           <div class="right-pane d-flex align-items-start pt-4">
-            <img class="img-pane rounded rounded-5 cursor-pointer" src="../src/assets/images/right-pane-image2.jpg" width="90%" height="80%" alt="Left Pane Image" />
+            <img class="img-pane rounded rounded-5 cursor-pointer" src="../src/assets/images/right-pane-image2.jpg" width="90%" height="100%" alt="Left Pane Image" />
           </div>
         </div>
       </main>
@@ -36,7 +36,7 @@
         </div>
       </section>
     </div>
-    <div class="row benefit-section p-1 d-flex flex-row justify-content-around">
+    <div class="row benefit-section d-flex flex-row justify-content-around">
       <h1 class="fs-2 mt-4 mb-4">Optimizing your Business</h1>
       <BenefitCard
         v-for="(benefit, index) in benefitList" 
@@ -90,10 +90,10 @@ export default {
         {id: 8, name: 'Play station 5 joystick', description: 'Play station 5 joystick', cardImage: require("../src/assets/images/product-images/joystick-playstation.jpg"), price: 69.45, stars: 4},
       ],
       benefitList: [
-        {title: "Product comparison", icon: "fa fa-balance-scale", description: "Compare products to find exactly what<br> you are looking for"},
-        {title: "Documents & drawings", icon: "fa fa-file-text-o", description: "Documents and drawings for your<br> convenience"},
-        {title: "Select and configure", icon: "fa fa-wpforms", description: "With configurator tool one can<br> customize products with variety<br> options"},
-        {title: "For logged in users", icon: "fa fa-wpforms", description: "For logged in users we offer the<br> posibility to view prices and check<br> availability"},
+        {title: "Product comparison", icon: "fa fa-balance-scale", description: "Compare products to find exactly what you are looking for"},
+        {title: "Documents & drawings", icon: "fa fa-file-text-o", description: "Documents and drawings for your convenience"},
+        {title: "Select and configure", icon: "fa fa-wpforms", description: "With configurator tool one can customize products with variety options"},
+        {title: "For logged in users", icon: "fa fa-wpforms", description: "For logged in users we offer the posibility to view prices and check availability"},
       ]
     }
   }

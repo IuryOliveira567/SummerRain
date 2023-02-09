@@ -17,6 +17,7 @@
           <li><a href="#">Twitter</a></li>
           <li><a href="#">Instagram</a></li>
           <li><a href="#">Linkedin</a></li>
+          <li><a href="#"></a></li>
         </ul>
       </div>
       <div>
@@ -26,6 +27,7 @@
           <li><a href="#">Delivery Options</a></li>
           <li><a href="#">Terms & Conditions</a></li>
           <li><a href="#">Privacy Notice</a></li>
+          <li><a href="#"></a></li>
         </ul>
       </div>
       <div>

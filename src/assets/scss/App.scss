@@ -1,11 +1,10 @@
-
 @import "./resp/AppResp.scss";
 @import "./colors.scss";
 @import "./globals.scss";
 
 header {
   background-color: $light_1;
-  box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.16);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 
 main {
@@ -18,7 +17,7 @@ main {
 
 .left-pane {
   padding-left: 10%;
-  padding-top: 7%;
+  padding-top: 5%;
 }
 
 .left-pane  * {
@@ -31,6 +30,16 @@ main {
 
 .left-pane h1 {
   font-size: 3.2rem;
+}
+
+@-moz-document url-prefix() {
+  .left-pane * {
+    margin: 0.5rem;
+  }
+}
+
+.right-pane {
+  width: 50%;
 }
 
 .right-pane img {
@@ -57,6 +66,11 @@ main {
   height: auto;
   background-color: $light_2;
   color:$primary_1;
+  padding-bottom: 2%;
+}
+
+.benefit-section h1 {
+  margin-left: 2%;
 }
 
 .products {
@@ -66,9 +80,5 @@ main {
 
 .products h1 {
   color:$primary_1;
-  margin-left: 5px;
-}
-
-.footer-pane {
-  height: 60vh;
+  margin-left: 2%;
 }

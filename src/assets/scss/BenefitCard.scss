@@ -1,17 +1,16 @@
-.bnf {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 2px;
+.benefitcard {
+  width: 20%;
 }
 
-.bnf div {
-  text-align: justify;
+.benefitcard h5 {
+  text-align: center;
 }
 
-.bnf span i {
-  font-size: 2rem;
+.benefitcard p {
+  display: block;
+  margin: auto;
+  word-break: keep-all;
+  text-align: justify !important;
 }
 
 @import "./resp/BenefitCardResp.scss";

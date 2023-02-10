@@ -9,6 +9,23 @@
   margin: 10px;
   cursor: pointer;
   box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.16);
+
+  .name {
+    font-size: 1.2rem;
+  }
+  
+  .name, .price {
+    color: $primary_4;
+  }
+
+  .buy-button {
+    border-radius: 10px;
+    padding: 6px;
+    border: none;
+    color: $light_1;
+    background-color: $primary_1;
+    width: 80%;
+  }  
 }
 
 .card:hover {
@@ -17,26 +34,6 @@
 
 .card * {
   margin: 2px;
-}
-
-.name {
-  font-size: 1.2rem;
-}
-
-.name, .price {
-  color: $primary_4;
-}
-
-.buy-button {
-  border-radius: 10px;
-  padding: 6px;
-  border: none;
-}
-
-.buy-button {
-  color: $light_1;
-  background-color: $primary_1;
-  width: 80%;
 }
 
 @import "./resp/ProductCardResp.scss";

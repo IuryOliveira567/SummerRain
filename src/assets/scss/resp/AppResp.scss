@@ -2,14 +2,14 @@
     body {
       font-size: 0.8rem;
     }
-  
+
     .img-pane {
-      height: 80%;
+      height: 100%;
     }
-  
+    
     @-moz-document url-prefix() {
       .img-pane {
-        height: 100%;
+        height: 100% !important;
       }
     }
 

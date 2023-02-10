@@ -9,61 +9,76 @@ header {
 
 main {
   height: auto;
-}
 
-.main-pane {
-  height: 100%;
-}
+  .main-pane {
+    height: 100%;
 
-.left-pane {
-  padding-left: 10%;
-  padding-top: 5%;
-}
+    .left-pane {
+      padding-left: 10%;
+      padding-top: 5%;
 
-.left-pane  * {
-   margin: 1rem;
-}
+      h1, h3 {
+        color: $primary_1;
+      }
 
-.left-pane h1, h3 {
-  color: $primary_1;
-}
+      h1 {
+        font-size: 3.2rem;
+      }
 
-.left-pane h1 {
-  font-size: 3.2rem;
-}
+      
+      .getStartedBtn {
+        background-color: $primary_1;
+        color: $light_1;
+        text-decoration: none;
+        padding: 8px 20px;
+        border-radius: 5px;
+      }
 
-@-moz-document url-prefix() {
-  .left-pane * {
-    margin: 0.5rem; 
+      .getStartedBtn:hover {
+        color:$primary_1;
+        background-color: $light_1;
+        border: 1px solid $primary_1;
+        transition-duration: 0.3s;
+      }
+
+      .getStartedBtn:active {
+        box-shadow: inset 3px 3px 0 0 rgba(0, 0, 0, 0.16);
+      }
+    }
+    
+    .left-pane  * {
+       margin: 1rem;
+    }
+
+    .right-pane {
+      width: 50%;
+
+      img {
+        cursor: pointer;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.16);
+      }
+    }
   }
 }
 
-.right-pane {
-  width: 50%;
+
+@-moz-document url-prefix() {
+  .left-pane * {
+    margin: 0.5rem !important; 
+  }
 }
 
-.right-pane img {
-  cursor: pointer;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.16);
-}
 
-.getStartedBtn {
-  background-color: $primary_1;
-  color: $light_1;
-  text-decoration: none;
-  padding: 8px 20px;
-  border-radius: 5px;
-}
+.products {
+  height: 200%;
+  margin-bottom: 3%;
 
-.getStartedBtn:hover {
-  color:$primary_1;
-  background-color: $light_1;
-  border: 1px solid $primary_1;
-  transition-duration: 0.3s;
-}
+  h1 {
+    color:$primary_1;
+    margin-left: 2%;
+    margin-bottom: 3%;
+  }
 
-.getStartedBtn:active {
-  box-shadow: inset 3px 3px 0 0 rgba(0, 0, 0, 0.16);
 }
 
 .benefit-section {
@@ -71,19 +86,10 @@ main {
   background-color: $light_2;
   color:$primary_1;
   padding-bottom: 2%;
-}
 
-.benefit-section h1 {
-  margin-left: 2%;
-}
+  
+  h1 {
+    margin-left: 2%;
+  }
 
-.products {
-  height: 200%;
-  margin-bottom: 3%;
-}
-
-.products h1 {
-  color:$primary_1;
-  margin-left: 2%;
-  margin-bottom: 3%;
 }

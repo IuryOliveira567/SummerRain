@@ -7,36 +7,37 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-}
 
-h3 {
-  color: $light_1;
-  margin-bottom: 2rem;
-}
+  div {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+    padding-left: 2%;
 
-.footer div {
-  width: 22%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 80%;
-  padding-left: 2%;
-}
+    ul {
+      list-style: none;
+      padding: 0;
 
-.footer div ul {
-  list-style: none;
-  padding: 0; 
-}
-.footer div ul li a {
-  color: $light_1;
-  text-decoration: none;
-  display: flex;
-  padding-bottom: 1.2rem;
-  justify-content: start;
-}
+      li a {
+        color: $light_1;
+        text-decoration: none;
+        display: flex;
+        padding-bottom: 1.2rem;
+        justify-content: start;
+      }
 
-.footer div ul li a:hover {
-  color: $light_3;
+      li a:hover {
+        color: $light_3;
+      }
+    }
+  }
+  
+  h3 {
+    color: $light_1;
+    margin-bottom: 2rem;
+  }
 }
 
 @import "./resp/FooterResp.scss";

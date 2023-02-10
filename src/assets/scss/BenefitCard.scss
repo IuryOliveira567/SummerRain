@@ -1,16 +1,16 @@
 .benefitcard {
   width: 20%;
-}
 
-.benefitcard h5 {
-  text-align: center;
-}
+  h5 {
+    text-align: center;
+  }
 
-.benefitcard p {
-  display: block;
-  margin: auto;
-  word-break: keep-all;
-  text-align: justify !important;
+  p {
+    display: block;
+    margin: auto;
+    word-break: keep-all;
+    text-align: justify !important;
+  }
 }
 
 @import "./resp/BenefitCardResp.scss";

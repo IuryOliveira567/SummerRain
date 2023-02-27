@@ -11,7 +11,7 @@
           <div class="left-pane">
             <h1 class="fs-1">Get the Best<br>
             Products</h1>
-            <h3 class="fs-4">From our Store</h3><br>
+            <h2 class="fs-4">From our Store</h2><br>
             <a class="getStartedBtn fs-5" href="#">Get Started<i class="fa fa-angle-right fa-align-right"></i></a>
           </div>
           <div class="right-pane d-flex align-items-start pt-4">

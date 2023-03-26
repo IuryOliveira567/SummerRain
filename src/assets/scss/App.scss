@@ -25,7 +25,10 @@ main {
         font-size: 3.2rem;
       }
 
-      
+      h2 {
+        color: $primary_1;
+      }
+
       .getStartedBtn {
         background-color: $primary_1;
         color: $light_1;

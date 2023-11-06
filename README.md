@@ -8,11 +8,11 @@ Summer Rain is a landing page of an online store.
 ### SETUP
 <code>npm install</code> to install all the dependencies<br/>
 
+<code>npm run serve</code> to run in your localhost
+
 ### Compiles and minifies for production
 
 <code>npm run build</code>
 
 ### Lints and fixes files
 <code>npm run lint</code>
-
-<code>npm run serve</code> to run in your localhost

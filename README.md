@@ -1,24 +1,18 @@
-# projeto10
+# Summer Rain
 
-## Project setup
-```
-npm install
-```
+Hey 😎
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This is my first front end project using some new technologies i've learned such as Vue js and SASS.<br/>
+Summer Rain is a landing page of an online store.
+
+### SETUP
+<code>npm install</code> to install all the dependencies<br/>
 
 ### Compiles and minifies for production
-```
-npm run build
-```
+
+<code>npm run build</code>
 
 ### Lints and fixes files
-```
-npm run lint
-```
+<code>npm run lint</code>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<code>npm run serve</code> to run in your localhost

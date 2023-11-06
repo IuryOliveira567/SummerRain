@@ -1,6 +1,6 @@
 # Summer Rain
 
-Hey 😎
+Hi there!
 
 This is my first front end project using some new technologies i've learned such as Vue js and SASS.<br/>
 Summer Rain is a landing page of an online store.
